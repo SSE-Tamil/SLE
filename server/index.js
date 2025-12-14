@@ -11,9 +11,10 @@ app.use(cors());
 app.use(express.json());
 
 // Email Transporter Config
-// NOTE: For Gmail, you must use an "App Password" not your regular password.
-const transporter = nodemailer.createTransport({
-    service: 'gmail', // or your preferred email service
+// NOTE: For Gmail, you must use an "App Password" not your regular password.const transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,  // Using SSL port
+    secure: true, // Enforce SSL
     auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS
