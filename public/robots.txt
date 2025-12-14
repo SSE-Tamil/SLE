@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://srilaksmieng.web.app/sitemap.xml
