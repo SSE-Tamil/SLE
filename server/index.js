@@ -12,6 +12,7 @@ app.use(express.json());
 
 // Email Transporter Config
 // NOTE: For Gmail, you must use an "App Password" not your regular password.const transporter = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,  // Using SSL port
     secure: true, // Enforce SSL
